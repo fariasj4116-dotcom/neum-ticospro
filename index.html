@@ -4,6 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Promo 2x1 en neumáticos por pedido. Consultá disponibilidad, medidas y presupuesto por WhatsApp." />
+  <meta name="theme-color" content="#111827" />
+  <meta property="og:title" content="Neumáticos Pro | Promo 2x1 por Pedido" />
+  <meta property="og:description" content="Promoción increíble: 2x1 en neumáticos por pedido. Todas las marcas y medidas disponibles." />
+  <meta property="og:type" content="website" />
   <title>Neumáticos Pro | Promo 2x1 por Pedido</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -75,6 +79,12 @@
         box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
       }
     }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
   </style>
 
 </head>
@@ -85,7 +95,7 @@
         <span class="grid h-10 w-10 place-items-center rounded-2xl bg-ink text-lg font-black text-promo">NP</span>
         <span class="text-lg font-black tracking-tight sm:text-xl">Neumáticos Pro</span>
       </a>
-      <a href="#presupuesto" class="rounded-full bg-impact px-4 py-3 text-sm font-extrabold text-white shadow-lg transition hover:-translate-y-0.5 hover:bg-red-700 focus:outline-none focus:ring-4 focus:ring-red-200 sm:px-5">
+      <a href="#presupuesto" class="rounded-full bg-impact px-4 py-3 text-sm font-extrabold text-white shadow-lg transition hover:-translate-y-0.5 hover:bg-red-700 focus:outline-none focus:ring-4 focus:ring-red-300">
         Consultar Disponibilidad
       </a>
     </nav>
@@ -113,10 +123,10 @@
             Requisito: Seña previa del 50%
           </p>
           <div class="mt-8 flex flex-col gap-3 sm:flex-row">
-            <a href="#presupuesto" class="inline-flex items-center justify-center rounded-2xl bg-ink px-6 py-4 text-base font-black text-white shadow-lg transition hover:-translate-y-0.5 hover:bg-gray-800">
+            <a href="#presupuesto" class="inline-flex items-center justify-center rounded-2xl bg-ink px-6 py-4 text-base font-black text-white shadow-lg transition hover:-translate-y-0.5 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-600 active:scale-95">
               Pedir presupuesto ahora
             </a>
-            <a href="tel:+5492604009077" class="inline-flex items-center justify-center rounded-2xl border border-gray-200 bg-white px-6 py-4 text-base font-black text-ink shadow-sm transition hover:-translate-y-0.5 hover:border-gray-300">
+            <a href="tel:+5492604009077" class="inline-flex items-center justify-center rounded-2xl border border-gray-200 bg-white px-6 py-4 text-base font-black text-ink shadow-sm transition hover:-translate-y-0.5 hover:border-gray-300 focus:outline-none focus:ring-4 focus:ring-gray-200 active:scale-95">
               Llamar: +54 9 260 400-9077
             </a>
           </div>
@@ -129,10 +139,11 @@
             </div>
             <div class="relative overflow-hidden rounded-2xl bg-gray-900 shadow-2xl">
               <img
-                src="https://images.unsplash.com/photo-1555393142-98e8aa266341?w=500&h=500&fit=crop"
+                src="https://www.publicdomainpictures.net/pictures/180000/velka/car-wheel-1466173968XBr.jpg"
                 alt="Auto moderno con neumáticos premium"
                 class="h-[320px] w-full object-cover sm:h-[430px]"
                 loading="eager"
+                decoding="async"
               />
               <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-5">
                 <p class="text-sm font-black uppercase tracking-wide text-promo">Cubiertas reales por pedido</p>
@@ -174,7 +185,7 @@
               <div class="grid gap-5">
             <label class="block">
               <span class="mb-2 block text-sm font-black text-gray-800">Rodado</span>
-              <select id="wheelSize" class="w-full rounded-2xl border border-gray-200 bg-white px-4 py-4 text-base font-bold text-ink outline-none transition focus:border-impact focus:ring-4 focus:ring-red-100">
+              <select id="wheelSize" class="w-full rounded-2xl border border-gray-200 bg-white px-4 py-4 text-base font-bold text-ink outline-none transition focus:border-impact focus:ring-4 focus:ring-red-200">
                 <option>Rodado 13</option>
                 <option>Rodado 14</option>
                 <option selected>Rodado 15</option>
@@ -186,7 +197,7 @@
 
             <label class="block">
               <span class="mb-2 block text-sm font-black text-gray-800">Marca de preferencia</span>
-              <select id="brand" class="w-full rounded-2xl border border-gray-200 bg-white px-4 py-4 text-base font-bold text-ink outline-none transition focus:border-impact focus:ring-4 focus:ring-red-100">
+              <select id="brand" class="w-full rounded-2xl border border-gray-200 bg-white px-4 py-4 text-base font-bold text-ink outline-none transition focus:border-impact focus:ring-4 focus:ring-red-200">
                 <option selected>HAIDA</option>
                 <option>TRIANGLE</option>
                 <option>DAUFEN</option>
@@ -196,7 +207,7 @@
 
             <label class="block">
               <span class="mb-2 block text-sm font-black text-gray-800">Tu auto / modelo</span>
-              <input id="carModel" type="text" placeholder="Ej: Toyota Corolla 2018" class="w-full rounded-2xl border border-gray-200 bg-white px-4 py-4 text-base font-bold text-ink outline-none transition placeholder:font-semibold placeholder:text-gray-400 focus:border-impact focus:ring-4 focus:ring-red-100" />
+              <input id="carModel" type="text" placeholder="Ej: Toyota Corolla 2018" class="w-full rounded-2xl border border-gray-200 bg-white px-4 py-4 text-base font-bold text-ink outline-none transition focus:border-impact focus:ring-4 focus:ring-red-200" />
             </label>
               </div>
             </div>
@@ -205,10 +216,11 @@
               <div class="overflow-hidden rounded-2xl bg-white shadow-lg">
                 <img
                   id="tirePreviewImage"
-                  src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=500&h=500&fit=crop"
+                  src="https://www.publicdomainpictures.net/pictures/180000/velka/car-wheel-1466173968XBr.jpg"
                   alt="Cubierta seleccionada"
                   class="h-64 w-full object-cover transition duration-500 sm:h-72"
                   loading="lazy"
+                  decoding="async"
                 />
               </div>
               <div class="mt-4 flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
@@ -224,45 +236,45 @@
               <div class="mt-5">
                 <p class="mb-3 text-sm font-black text-gray-800">Elegí la marca alternativa</p>
                 <div class="grid grid-cols-2 gap-3 sm:grid-cols-4">
-                  <button type="button" data-brand-card="HAIDA" class="brand-card rounded-2xl border-2 border-impact bg-white p-2 text-left shadow-sm transition hover:-translate-y-0.5">
-                    <img src="https://images.unsplash.com/photo-1555393142-98e8aa266341?w=120&h=120&fit=crop" alt="Neumático marca HAIDA" class="h-20 w-full rounded-xl object-cover" loading="lazy" />
+                  <button type="button" data-brand-card="HAIDA" class="brand-card rounded-2xl border-2 border-impact bg-white p-2 text-left shadow-sm transition hover:-translate-y-0.5 active:scale-95">
+                    <img src="https://www.publicdomainpictures.net/pictures/180000/velka/car-wheel-1466173968XBr.jpg" alt="Neumático marca HAIDA" class="h-20 w-full rounded-xl object-cover" loading="lazy" decoding="async" />
                     <span class="mt-2 block text-sm font-black text-ink">HAIDA</span>
                   </button>
-                  <button type="button" data-brand-card="TRIANGLE" class="brand-card rounded-2xl border-2 border-transparent bg-white p-2 text-left shadow-sm transition hover:-translate-y-0.5">
-                    <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=120&h=120&fit=crop" alt="Neumático marca TRIANGLE" class="h-20 w-full rounded-xl object-cover" loading="lazy" />
+                  <button type="button" data-brand-card="TRIANGLE" class="brand-card rounded-2xl border-2 border-transparent bg-white p-2 text-left shadow-sm transition hover:-translate-y-0.5 active:scale-95">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Tire_tread.jpg/440px-Tire_tread.jpg" alt="Neumático marca TRIANGLE" class="h-20 w-full rounded-xl object-cover" loading="lazy" decoding="async" />
                     <span class="mt-2 block text-sm font-black text-ink">TRIANGLE</span>
                   </button>
-                  <button type="button" data-brand-card="DAUFEN" class="brand-card rounded-2xl border-2 border-transparent bg-white p-2 text-left shadow-sm transition hover:-translate-y-0.5">
-                    <img src="https://images.unsplash.com/photo-1577525523521-a2e8f4d47de2?w=120&h=120&fit=crop" alt="Neumático marca DAUFEN" class="h-20 w-full rounded-xl object-cover" loading="lazy" />
+                  <button type="button" data-brand-card="DAUFEN" class="brand-card rounded-2xl border-2 border-transparent bg-white p-2 text-left shadow-sm transition hover:-translate-y-0.5 active:scale-95">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Tire_tread.jpg/440px-Tire_tread.jpg" alt="Neumático marca DAUFEN" class="h-20 w-full rounded-xl object-cover" loading="lazy" decoding="async" />
                     <span class="mt-2 block text-sm font-black text-ink">DAUFEN</span>
                   </button>
-                  <button type="button" data-brand-card="HARMONIC" class="brand-card rounded-2xl border-2 border-transparent bg-white p-2 text-left shadow-sm transition hover:-translate-y-0.5">
-                    <img src="https://images.unsplash.com/photo-1555393142-98e8aa266341?w=120&h=120&fit=crop" alt="Neumático marca HARMONIC" class="h-20 w-full rounded-xl object-cover" loading="lazy" />
+                  <button type="button" data-brand-card="HARMONIC" class="brand-card rounded-2xl border-2 border-transparent bg-white p-2 text-left shadow-sm transition hover:-translate-y-0.5 active:scale-95">
+                    <img src="https://www.publicdomainpictures.net/pictures/180000/velka/car-wheel-1466173968XBr.jpg" alt="Neumático marca HARMONIC" class="h-20 w-full rounded-xl object-cover" loading="lazy" decoding="async" />
                     <span class="mt-2 block text-sm font-black text-ink">HARMONIC</span>
                   </button>
                 </div>
               </div>
               <div class="mt-4 grid grid-cols-3 gap-3">
-                <button type="button" data-preview-key="urban" class="preview-option rounded-2xl border-2 border-impact bg-white p-2 text-left shadow-sm transition hover:-translate-y-0.5">
-                  <img src="https://images.unsplash.com/photo-1555393142-98e8aa266341?w=120&h=120&fit=crop" alt="Cubierta urbana" class="h-20 w-full rounded-xl object-cover" loading="lazy" />
+                <button type="button" data-preview-key="urban" class="preview-option rounded-2xl border-2 border-impact bg-white p-2 text-left shadow-sm transition hover:-translate-y-0.5 active:scale-95">
+                  <img src="https://www.publicdomainpictures.net/pictures/180000/velka/car-wheel-1466173968XBr.jpg" alt="Cubierta urbana" class="h-20 w-full rounded-xl object-cover" loading="lazy" decoding="async" />
                   <span class="mt-2 block text-xs font-black text-ink">Urbana</span>
                 </button>
-                <button type="button" data-preview-key="performance" class="preview-option rounded-2xl border-2 border-transparent bg-white p-2 text-left shadow-sm transition hover:-translate-y-0.5">
-                  <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=120&h=120&fit=crop" alt="Cubierta deportiva" class="h-20 w-full rounded-xl object-cover" loading="lazy" />
+                <button type="button" data-preview-key="performance" class="preview-option rounded-2xl border-2 border-transparent bg-white p-2 text-left shadow-sm transition hover:-translate-y-0.5 active:scale-95">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Tire_tread.jpg/440px-Tire_tread.jpg" alt="Cubierta deportiva" class="h-20 w-full rounded-xl object-cover" loading="lazy" decoding="async" />
                   <span class="mt-2 block text-xs font-black text-ink">Performance</span>
                 </button>
-                <button type="button" data-preview-key="suv" class="preview-option rounded-2xl border-2 border-transparent bg-white p-2 text-left shadow-sm transition hover:-translate-y-0.5">
-                  <img src="https://images.unsplash.com/photo-1577525523521-a2e8f4d47de2?w=120&h=120&fit=crop" alt="Cubierta SUV" class="h-20 w-full rounded-xl object-cover" loading="lazy" />
+                <button type="button" data-preview-key="suv" class="preview-option rounded-2xl border-2 border-transparent bg-white p-2 text-left shadow-sm transition hover:-translate-y-0.5 active:scale-95">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Tire_tread.jpg/440px-Tire_tread.jpg" alt="Cubierta SUV" class="h-20 w-full rounded-xl object-cover" loading="lazy" decoding="async" />
                   <span class="mt-2 block text-xs font-black text-ink">SUV / Ruta</span>
                 </button>
               </div>
             </div>
           </div>
 
-          <button id="whatsappButton" type="submit" class="pulse-cta mt-7 flex w-full items-center justify-center gap-3 rounded-2xl bg-whatsapp px-5 py-5 text-center text-base font-black uppercase leading-tight text-white shadow-lg transition hover:-translate-y-0.5 hover:bg-green-500 focus:outline-none focus:ring-4 focus:ring-green-200 sm:text-xl">
+          <button id="whatsappButton" type="submit" class="pulse-cta mt-7 flex w-full items-center justify-center gap-3 rounded-2xl bg-whatsapp px-5 py-5 text-center text-base font-black uppercase text-white shadow-lg transition hover:-translate-y-0.5 hover:bg-green-700 focus:outline-none focus:ring-4 focus:ring-green-300 active:scale-95">
             <span class="grid h-8 w-8 place-items-center rounded-full bg-white text-whatsapp" aria-hidden="true">
-              <svg viewBox="0 0 24 24" class="h-5 w-5 fill-current">
-                <path d="M20.52 3.48A11.9 11.9 0 0 0 12.04 0C5.44 0 .08 5.36.08 11.96c0 2.1.55 4.16 1.6 5.98L0 24l6.22-1.63a11.96 11.96 0 0 0 5.82 1.48h.01c6.6 0 11.96-5.36 11.96-11.96 0-3.19-1.24-6.2-3.49-8.41ZM12.05 21.83h-.01a9.9 9.9 0 0 1-5.04-1.38l-.36-.21-3.69.97.99-3.6-.23-.37a9.9 9.9 0 0 1-1.52-5.28c0-5.48 4.46-9.94 9.95-9.94a9.87 9.87 0 0 1 7.03 2.91 9.87 9.87 0 0 1 2.91 7.03c-.01 5.48-4.47 9.87-10.03 9.87Zm5.45-7.44c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.41-1.49-.89-.8-1.49-1.78-1.67-2.08-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.09 4.49.71.31 1.27.49 1.7.62.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2.01-1.41.25-.69.25-1.28.17-1.41-.07-.13-.27-.2-.57-.35Z"/>
+              <svg viewBox="0 0 24 24" class="h-5 w-5 fill-current" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.52 3.48A11.9 11.9 0 0 0 12.04 0C5.44 0 .08 5.36.08 11.96c0 2.1.55 4.16 1.6 5.98L0 24l6.22-1.63a11.96 11.96 0 0 0 5.82 1.48h.01c6.6 0 11.96-5.36 11.96-11.96 0-3.19-1.2 6.5-2.92 9.25m-8.48 1.8a9.88 9.88 0 0 1-5.03-1.37l-.36-.21-3.74.98.99-3.63-.23-.38a9.86 9.86 0 0 1 1.51-5.13 9.88 9.88 0 0 1 13.98 0 9.88 9.88 0 0 1 0 13.98 9.88 9.88 0 0 1-6.12 2.24" />
               </svg>
             </span>
             Consultá y pedí tu presupuesto al WhatsApp
@@ -281,7 +293,7 @@
         <p class="text-lg font-black">Neumáticos Pro</p>
         <p class="mt-1 text-sm font-semibold text-gray-300">Venta por pedido. Promoción sujeta a disponibilidad y confirmación.</p>
       </div>
-      <a href="https://wa.me/5492604009077" class="rounded-2xl bg-white px-5 py-3 text-base font-black text-ink transition hover:bg-promo">
+      <a href="https://wa.me/5492604009077" class="rounded-2xl bg-white px-5 py-3 text-base font-black text-ink transition hover:bg-promo focus:outline-none focus:ring-4 focus:ring-gray-600 active:scale-95">
         WhatsApp: +54 9 260 400-9077
       </a>
     </div>
@@ -290,17 +302,17 @@
   <script>
     const previewData = {
       urban: {
-        image: "https://images.unsplash.com/photo-1555393142-98e8aa266341?w=500&h=500&fit=crop",
+        image: "https://www.publicdomainpictures.net/pictures/180000/velka/car-wheel-1466173968XBr.jpg",
         title: "Cubierta urbana",
         text: "Ideal para uso diario, ciudad y ruta. Buena opción para autos compactos y sedanes familiares."
       },
       performance: {
-        image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=500&h=500&fit=crop",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Tire_tread.jpg/440px-Tire_tread.jpg",
         title: "Cubierta performance",
         text: "Pensada para mayor agarre, estabilidad y respuesta en autos de gama media y alta."
       },
       suv: {
-        image: "https://images.unsplash.com/photo-1577525523521-a2e8f4d47de2?w=500&h=500&fit=crop",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Tire_tread.jpg/440px-Tire_tread.jpg",
         title: "Cubierta SUV / ruta",
         text: "Referencia visual para SUV, camionetas y uso mixto. Se confirma dibujo y disponibilidad por medida."
       }
@@ -308,19 +320,19 @@
 
     const brandData = {
       HAIDA: {
-        image: "https://images.unsplash.com/photo-1555393142-98e8aa266341?w=500&h=500&fit=crop",
+        image: "https://www.publicdomainpictures.net/pictures/180000/velka/car-wheel-1466173968XBr.jpg",
         description: "HAIDA es una alternativa competitiva para uso diario, ideal cuando se busca buen precio y disponibilidad."
       },
       TRIANGLE: {
-        image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=500&h=500&fit=crop",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Tire_tread.jpg/440px-Tire_tread.jpg",
         description: "TRIANGLE es una marca reconocida dentro de las alternativas importadas, con opciones para autos, SUV y utilitarios."
       },
       DAUFEN: {
-        image: "https://images.unsplash.com/photo-1577525523521-a2e8f4d47de2?w=500&h=500&fit=crop",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Tire_tread.jpg/440px-Tire_tread.jpg",
         description: "DAUFEN se ofrece como opción de buena relación precio-producto para clientes que buscan resolver rápido la compra."
       },
       HARMONIC: {
-        image: "https://images.unsplash.com/photo-1555393142-98e8aa266341?w=500&h=500&fit=crop",
+        image: "https://www.publicdomainpictures.net/pictures/180000/velka/car-wheel-1466173968XBr.jpg",
         description: "HARMONIC es una alternativa accesible para consultar por medida y disponibilidad según el vehículo."
       }
     };
@@ -336,7 +348,8 @@
     let selectedPreview = "urban";
 
     function fallbackImage(event) {
-      event.target.src = "https://images.unsplash.com/photo-1555393142-98e8aa266341?w=500&h=500&fit=crop";
+      event.target.src = "https://www.publicdomainpictures.net/pictures/180000/velka/car-wheel-1466173968XBr.jpg";
+      event.target.style.backgroundColor = "#f3f4f6";
     }
 
     document.querySelectorAll("img").forEach((image) => {
